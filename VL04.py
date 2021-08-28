@@ -6,3 +6,4 @@ if 10**4 >= n >= 2:
     print(("{:.4f}".format(S)))
 else:
     n = int(input())
++

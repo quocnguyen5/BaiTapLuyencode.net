@@ -6,10 +6,12 @@ def check(string):
 
 
 while True:
-    str = input()
-    if str == "":
+    try:
+        str = input()
+        if check(str):
+            print("YES")
+        else:
+            print("NO")
+    except EOFError:
         break
-    if check(str):
-        print("YES")
-    else:
-        print("NO")
+    
